@@ -1269,9 +1269,9 @@ RectTransform:
   - {fileID: 741552922}
   - {fileID: 1575064793}
   - {fileID: 1853923132}
+  - {fileID: 844351870}
   - {fileID: 1103894300}
   - {fileID: 637998002}
-  - {fileID: 844351870}
   - {fileID: 1036749846}
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -1308,7 +1308,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844351869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -277.21}
+  m_LocalPosition: {x: 0, y: 0, z: -293.79}
   m_LocalScale: {x: 0.4430767, y: 0.4430767, z: 0.4430767}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1355,7 +1355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
