@@ -155,7 +155,7 @@ MonoBehaviour:
   obstaclePrefab: {fileID: 4932438786033629364, guid: 674638f8d3b96044cb9135a05133341a, type: 3}
   obstaclePrefabs:
   - {fileID: 4932438786033629364, guid: 674638f8d3b96044cb9135a05133341a, type: 3}
-  center: {x: 12.5, y: 4.7, z: 0}
+  center: {x: 12.5, y: 5, z: 0}
   size: {x: 1, y: 3, z: 0}
   enemyCount: 0
   enemyCountMax: 20
@@ -1927,7 +1927,7 @@ MonoBehaviour:
   obstaclePrefab: {fileID: 4932438786033629364, guid: a714e53812cd15d4d983d11671f15f25, type: 3}
   obstaclePrefabs:
   - {fileID: 4932438786033629364, guid: a714e53812cd15d4d983d11671f15f25, type: 3}
-  center: {x: 12.5, y: -4.7, z: 0}
+  center: {x: 12.5, y: -5, z: 0}
   size: {x: 1, y: 3, z: 0}
   enemyCount: 0
   enemyCountMax: 20
@@ -2680,7 +2680,7 @@ GameObject:
   - component: {fileID: 1862451035}
   - component: {fileID: 1862451034}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: Spawner(Middle)
   m_TagString: Spawner1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2847,11 +2847,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 471715967935338913, guid: bd72f18ff74ac8e49be080e130b04771, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.52
+      value: -2.22
       objectReference: {fileID: 0}
     - target: {fileID: 471715967935338913, guid: bd72f18ff74ac8e49be080e130b04771, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.53
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 471715967935338913, guid: bd72f18ff74ac8e49be080e130b04771, type: 3}
       propertyPath: m_LocalPosition.z
