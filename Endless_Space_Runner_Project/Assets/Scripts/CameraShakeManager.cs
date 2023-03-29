@@ -4,6 +4,7 @@ using UnityEngine;
 using Cinemachine;
 
 
+
 public class CameraShakeManager : MonoBehaviour
 {
     public static CameraShakeManager instance;
