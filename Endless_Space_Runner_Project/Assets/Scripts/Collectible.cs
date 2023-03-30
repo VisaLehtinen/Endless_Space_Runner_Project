@@ -29,5 +29,6 @@ public class Collectible : MonoBehaviour
             obstacleSpawner.enemyCount--;
             Destroy(gameObject);
         }
+        
     }
 }
