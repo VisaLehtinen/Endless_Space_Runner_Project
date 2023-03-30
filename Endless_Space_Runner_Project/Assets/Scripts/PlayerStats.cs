@@ -16,6 +16,7 @@ public class PlayerStats : MonoBehaviour
     public GameObject gameOverPanel;
     public Animator gameOverAnimator;
     public GameObject particle;
+    public GameObject spawner;
 
     private void Update()
     {
@@ -23,6 +24,7 @@ public class PlayerStats : MonoBehaviour
         healthText.text = "X " + health;
         if (health <= 0)
         {
+            spawner.SetActive(false);
             Instantiate(particle, transform.position, Quaternion.identity);
             gameOverAnimator.SetTrigger("GameOver");
             Destroy(gameObject);
