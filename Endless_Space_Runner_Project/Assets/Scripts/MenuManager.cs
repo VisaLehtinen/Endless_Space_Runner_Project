@@ -11,6 +11,11 @@ public class MenuManager : MonoBehaviour
 
     public void LoadScene()
     {
+        StartCoroutine(FadeToScene());
+    }
+
+    public void Retry()
+    {
         SceneManager.LoadScene(levelSceneName);
     }
 
@@ -22,5 +27,11 @@ public class MenuManager : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    private IEnumerator FadeToScene()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(levelSceneName);
     }
 }

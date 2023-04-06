@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_Sprite
       objectReference: {fileID: 0}
+    - target: {fileID: 2364322599387052046, guid: b4e8d4dba57e9224da82be381f60477b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3298031382351796649, guid: b4e8d4dba57e9224da82be381f60477b, type: 3}
       propertyPath: m_SortingOrder
       value: -1

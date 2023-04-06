@@ -28,7 +28,7 @@ public class PlayerStats : MonoBehaviour
             Instantiate(particle, transform.position, Quaternion.identity);
             gameOverAnimator.SetTrigger("GameOver");
             Destroy(gameObject);
-            //Time.timeScale = 0;
+            
         }
     }
 }

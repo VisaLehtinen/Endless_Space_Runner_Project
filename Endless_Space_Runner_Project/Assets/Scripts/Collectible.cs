@@ -25,10 +25,25 @@ public class Collectible : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            playerStats.collectibleCount++;
-            obstacleSpawner.enemyCount--;
-            Destroy(gameObject);
+            if (this.CompareTag("Heart"))
+            {
+                if (playerStats.health < 5)
+                {
+                    playerStats.health++;
+                    obstacleSpawner.enemyCount--;
+                    
+                }
+                Destroy(gameObject);
+            }
+            else
+            {
+                playerStats.collectibleCount++;
+                obstacleSpawner.enemyCount--;
+                Destroy(gameObject);
+            }
+            
         }
+        
         
     }
 }
