@@ -17,6 +17,7 @@ public class PlayerStats : MonoBehaviour
     public Animator gameOverAnimator;
     public GameObject particle;
     public GameObject spawner;
+    public GameObject pauseButton;
 
     private void Update()
     {
@@ -25,6 +26,7 @@ public class PlayerStats : MonoBehaviour
         if (health <= 0)
         {
             spawner.SetActive(false);
+            pauseButton.SetActive(false);
             Instantiate(particle, transform.position, Quaternion.identity);
             gameOverAnimator.SetTrigger("GameOver");
             Destroy(gameObject);

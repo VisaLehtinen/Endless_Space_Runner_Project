@@ -8,13 +8,21 @@ public class GameStartTimer : MonoBehaviour
 {
     public TMP_Text timerText;
     public GameObject particle;
+    public GameObject pauseButton;
 
     // Start is called before the first frame update
     void Start()
     {
         
         Time.timeScale = 0;
+        ResumeTimer();
+    }
+
+    public void ResumeTimer()
+    {
         StartCoroutine(StartTimer());
+        timerText.gameObject.SetActive(true);
+        timerText.text = "3";
     }
 
 
@@ -27,6 +35,7 @@ public class GameStartTimer : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
         timerText.gameObject.SetActive(false);
         particle.SetActive(true);
+        pauseButton.SetActive(true);
         Time.timeScale = 1;
     }
 }
