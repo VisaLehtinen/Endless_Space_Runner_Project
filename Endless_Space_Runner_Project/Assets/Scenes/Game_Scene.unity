@@ -484,7 +484,7 @@ MonoBehaviour:
   obstaclePrefab: {fileID: 4932438786033629364, guid: 674638f8d3b96044cb9135a05133341a, type: 3}
   obstaclePrefabs:
   - {fileID: 4932438786033629364, guid: 674638f8d3b96044cb9135a05133341a, type: 3}
-  center: {x: 12.5, y: 5, z: 0}
+  center: {x: 15, y: 5, z: 0}
   size: {x: 1, y: 2, z: 0}
   enemyCount: 0
   enemyCountMax: 20
@@ -1781,7 +1781,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 519420031}
-  m_PlaneDistance: 10
+  m_PlaneDistance: 20
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2551,7 +2551,7 @@ MonoBehaviour:
   obstaclePrefab: {fileID: 4932438786033629364, guid: a714e53812cd15d4d983d11671f15f25, type: 3}
   obstaclePrefabs:
   - {fileID: 4932438786033629364, guid: a714e53812cd15d4d983d11671f15f25, type: 3}
-  center: {x: 12.5, y: -5, z: 0}
+  center: {x: 15, y: -5, z: 0}
   size: {x: 1, y: 2, z: 0}
   enemyCount: 0
   enemyCountMax: 20
@@ -3523,7 +3523,7 @@ MonoBehaviour:
   - {fileID: 4932438786033629364, guid: ba7611143a7233a468f75f06674c1573, type: 3}
   - {fileID: 1421273404411575496, guid: a225694e578b0f24297a5a3ab14a7507, type: 3}
   center: {x: 15, y: 0, z: 0}
-  size: {x: 4, y: 5, z: 0}
+  size: {x: 1, y: 5, z: 0}
   enemyCount: 0
   enemyCountMax: 20
   spawnCoolDown: 0
@@ -4146,7 +4146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 471715967935338918, guid: bd72f18ff74ac8e49be080e130b04771, type: 3}
       propertyPath: health
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 471715967935338918, guid: bd72f18ff74ac8e49be080e130b04771, type: 3}
       propertyPath: spawner

@@ -864,7 +864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4340539383612703542, guid: ef9bab49b1e42aa4eba41b12071319e4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 112.48736
+      value: 112.487366
       objectReference: {fileID: 0}
     - target: {fileID: 4340539383612703542, guid: ef9bab49b1e42aa4eba41b12071319e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1450,9 +1450,9 @@ Canvas:
   m_GameObject: {fileID: 1595944727}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 335022549}
-  m_PlaneDistance: 18.11
+  m_PlaneDistance: 20
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -1765,3 +1765,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelSceneName: Game_Scene
   mainMenuSceneName: MainMenu
+  isPaused: 0
+  pausePanel: {fileID: 0}
+  gameStartTimer: {fileID: 0}
