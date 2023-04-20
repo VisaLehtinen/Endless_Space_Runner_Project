@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 public class Collectible : MonoBehaviour
 {
     public PlayerStats playerStats;
@@ -15,6 +16,7 @@ public class Collectible : MonoBehaviour
     {
         playerStats = FindObjectOfType<PlayerStats>();
         obstacleSpawner = GameObject.FindGameObjectWithTag("Spawner1").GetComponent<ObstacleSpawner>();
+        
     }
 
     private void Update()
@@ -25,6 +27,7 @@ public class Collectible : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            
             if (this.CompareTag("Heart"))
             {
                 if (playerStats.health < 5)

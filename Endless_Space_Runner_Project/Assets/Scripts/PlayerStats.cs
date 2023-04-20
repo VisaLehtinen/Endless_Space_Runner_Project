@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.Audio;
 
 
 public class PlayerStats : MonoBehaviour
@@ -18,6 +18,9 @@ public class PlayerStats : MonoBehaviour
     public GameObject particle;
     public GameObject spawner;
     public GameObject pauseButton;
+    public AudioSource collectibleSource;
+    public AudioSource enemySource;
+    
 
     private void Update()
     {
@@ -25,12 +28,25 @@ public class PlayerStats : MonoBehaviour
         healthText.text = "X " + health;
         if (health <= 0)
         {
+            
             spawner.SetActive(false);
             pauseButton.SetActive(false);
             Instantiate(particle, transform.position, Quaternion.identity);
             gameOverAnimator.SetTrigger("GameOver");
             Destroy(gameObject);
             
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Collectible") || other.CompareTag("Heart"))
+        {
+            collectibleSource.Play();
+        }
+        if (other.CompareTag("Obstacle") || other.CompareTag("Obstacle2") || other.CompareTag("Obstacle3"))
+        {
+            enemySource.Play();
         }
     }
 }

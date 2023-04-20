@@ -12,6 +12,7 @@ public class MenuManager : MonoBehaviour
     public GameObject pausePanel;
     public GameStartTimer gameStartTimer;
 
+
     public void LoadScene()
     {
         StartCoroutine(FadeToScene());
